@@ -1,0 +1,145 @@
+.title {
+  text-align: center;
+  color: #ffffff;
+}
+
+body {
+  background-color: #201c29;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+}
+
+@media (min-width: 1080px) {
+  .orange {
+    color: #fc9463;
+  }
+  .yellow {
+    color: #f5d67b;
+  }
+
+  .blue {
+    color: #72e0d1;
+  }
+  .mindset {
+    height: 18px;
+    text-align: center;
+    position: relative;
+    animation: right 1.25s;
+    animation-iteration-count: 1;
+  }
+  .fuel {
+    height: 18px;
+    text-align: center;
+    position: relative;
+    animation: left 1.25s;
+    animation-iteration-count: 1;
+  }
+  .fire {
+    height: 18px;
+    text-align: center;
+    position: relative;
+    animation: bottom 1.25s;
+    animation-iteration-count: 1;
+  }
+
+  .intro {
+    opacity: 0;
+    display: table;
+    min-height: 72px;
+    border-right: 4px solid;
+    transition: color 2s linear, background-color 2s linear,
+      border-right-color 2s linear;
+  }
+
+  .intro:hover .descript .small {
+    max-height: fit-content;
+    overflow-x: hidden;
+  }
+  .descript .small {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 2s linear;
+  }
+  #btn-left {
+    border-color: greenyellow;
+    background-color: greenyellow;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+  #btn-right {
+    border-color: red;
+    background-color: red;
+    margin-right: 25%;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes right {
+    from {
+      left: 200%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  @keyframes bottom {
+    from {
+      top: 200%;
+    }
+    to {
+      top: 0%;
+    }
+  }
+  @keyframes left {
+    from {
+      right: 200%;
+    }
+    to {
+      right: 0%;
+    }
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes invrotate {
+    from {
+      transform: rotate(270deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+}
