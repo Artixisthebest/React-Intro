@@ -1,7 +1,8 @@
 import { Fragment } from "react";
 import "./App.css";
 import React from "react";
-
+import SonicPng from "./assets/sonic.png";
+import Grooves from "./assets/Groove.mp3";
 //  A function that starts when the website loads
 window.addEventListener("load", () => {
   //Adds   timer for 1.25 seconds, and plys  function "applyAnimation"
@@ -137,7 +138,8 @@ function Sonic() {
   return (
     <img
       class="center"
-      src="https://m.media-amazon.com/images/I/61LrppLm3BL._SY580_.jpg"
+      // src="https://m.media-amazon.com/images/I/61LrppLm3BL._SY580_.jpg"
+      src={SonicPng}
       alt="Sonic"
     ></img>
   );
@@ -181,3 +183,17 @@ function Buttons() {
   );
 }
 export { Buttons };
+
+function Groove() {
+  return (
+    <iframe
+      title="Нет!"
+      src={Grooves}
+      height="0"
+      width="0"
+      frameBorder="0"
+      allowFullScreen
+    ></iframe>
+  );
+}
+export { Groove };

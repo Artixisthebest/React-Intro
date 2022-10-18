@@ -7,9 +7,11 @@ import reportWebVitals from "./reportWebVitals";
 import { Descriptions } from "./App";
 import { Sonic } from "./App";
 import { Buttons } from "./App";
+import { Groove } from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <Groove></Groove>
     <Title />
     <Creeds></Creeds>
     <Descriptions></Descriptions>
